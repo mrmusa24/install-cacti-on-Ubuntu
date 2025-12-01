@@ -92,7 +92,10 @@ After running the script, you’ll have a fully configured **Cacti monitoring se
    - Use it to draw network maps, add links, icons, and configure data sources (SNMP, RRDTool, etc.).
 
 ---
+6.**Status Devices**
+- nano /etc/cron.d/cacti
 
+- */5 * * * * www-data php /var/www/html/cacti/poller.php > /dev/null 2>&1
 
 
 
